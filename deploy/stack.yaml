@@ -1,0 +1,9 @@
+services:
+  app:
+    image: "{{ .Env.IMAGE_TAG }}"
+    description: "Meine Webanwendung"
+    ports:
+      - "8080/tcp"
+    environment:
+      APP_ENV: production
+volumes: {}
